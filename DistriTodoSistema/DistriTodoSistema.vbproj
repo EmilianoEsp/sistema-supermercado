@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{079AF5F0-876B-438A-B2B5-A7C57060CFBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DistriTodoSistema.My.MyApplication</StartupObject>
+    <RootNamespace>DistriTodoSistema</RootNamespace>
+    <AssemblyName>DistriTodoSistema</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DistriTodoSistema.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DistriTodoSistema.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABM\Cajas_ABM.Designer.vb">
+      <DependentUpon>Cajas_ABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Cajas_ABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Cajeros_ABM.Designer.vb">
+      <DependentUpon>Cajeros_ABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Cajeros_ABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Clientes_ABM.Designer.vb">
+      <DependentUpon>Clientes_ABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Clientes_ABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Empleados_ABM.Designer.vb">
+      <DependentUpon>Empleados_ABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Empleados_ABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Movimientos_ABM.Designer.vb">
+      <DependentUpon>Movimientos_ABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Movimientos_ABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM\Proveedores_ABM.Designer.vb">
+      <DependentUpon>Proveedores_ABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ABM\Proveedores_ABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clase\Producto.vb" />
+    <Compile Include="Conexión con la Base.vb" />
+    <Compile Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\02 Aprobar Presupuesto\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\02 Aprobar Presupuesto\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\03 Procesar Devolucion de Producto\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\03 Procesar Devolucion de Producto\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\03 Procesar Devolucion de Producto\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\03 Procesar Devolucion de Producto\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\Nota de Credito.Designer.vb">
+      <DependentUpon>Nota de Credito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\Nota de Credito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\Orden de Compra.Designer.vb">
+      <DependentUpon>Orden de Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD%281-2-3%29\Orden de Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-11-ventas\buscar.designer.vb">
+      <DependentUpon>buscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-11-ventas\buscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-11-ventas\datosCaja.designer.vb">
+      <DependentUpon>datosCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-11-ventas\datosCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-11-ventas\facturaA.designer.vb">
+      <DependentUpon>facturaA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-11-ventas\facturaA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-11-ventas\Pago.designer.vb">
+      <DependentUpon>Pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-11-ventas\Pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-11-ventas\ticketFactura.Designer.vb">
+      <DependentUpon>ticketFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-11-ventas\ticketFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-11-ventas\venta.designer.vb">
+      <DependentUpon>venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-11-ventas\venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-12-pedido interno\PedidoInterno.designer.vb">
+      <DependentUpon>PedidoInterno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-12-pedido interno\PedidoInterno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-13-reponer Gondolas\Gondolas.designer.vb">
+      <DependentUpon>Gondolas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-13-reponer Gondolas\Gondolas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-14-Controlar Envio\Controlar envio realizado.Designer.vb">
+      <DependentUpon>Controlar envio realizado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-14-Controlar Envio\Controlar envio realizado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-14-Controlar Envio\Elegir envio a controlar.Designer.vb">
+      <DependentUpon>Elegir envio a controlar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-14-Controlar Envio\Elegir envio a controlar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-4\Reclamo.Designer.vb">
+      <DependentUpon>Reclamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-4\Reclamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-4\Sugerencia.Designer.vb">
+      <DependentUpon>Sugerencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-4\Sugerencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-4\VerificarInquietud.Designer.vb">
+      <DependentUpon>VerificarInquietud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-4\VerificarInquietud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-5\ConstanciaDeTrabajo.Designer.vb">
+      <DependentUpon>ConstanciaDeTrabajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-5\ConstanciaDeTrabajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-5\ContratarEmpleado.Designer.vb">
+      <DependentUpon>ContratarEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-5\ContratarEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-5\Legajo.Designer.vb">
+      <DependentUpon>Legajo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-5\Legajo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-6\ControlarProductos.Designer.vb">
+      <DependentUpon>ControlarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-6\ControlarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\ProductosSuper.Designer.vb">
+      <DependentUpon>ProductosSuper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\ProductosSuper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Registar cliente en envio.Designer.vb">
+      <DependentUpon>Registar cliente en envio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Registar cliente en envio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Registar cliente si no existe.Designer.vb">
+      <DependentUpon>Registar cliente si no existe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Registar cliente si no existe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Remito.Designer.vb">
+      <DependentUpon>Remito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Remito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Ticket Factura.Designer.vb">
+      <DependentUpon>Ticket Factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-7-Registrar Envio\Ticket Factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-8-9-10\ArqueoDiario\Control.Designer.vb">
+      <DependentUpon>Control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-8-9-10\ArqueoDiario\Control.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-8-9-10\ArqueoDiario\InformeArqueoDiario.Designer.vb">
+      <DependentUpon>InformeArqueoDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-8-9-10\ArqueoDiario\InformeArqueoDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-8-9-10\ArqueoDiario\MovimientosCaja.Designer.vb">
+      <DependentUpon>MovimientosCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-8-9-10\ArqueoDiario\MovimientosCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-8-9-10\GenerarHojaDeRuta\HojaDeRuta.Designer.vb">
+      <DependentUpon>HojaDeRuta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-8-9-10\GenerarHojaDeRuta\HojaDeRuta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-8-9-10\GenerarInformeMensual\GenerarInformeMensual.Designer.vb">
+      <DependentUpon>GenerarInformeMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-8-9-10\GenerarInformeMensual\GenerarInformeMensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DFD-8-9-10\GenerarInformeMensual\InformeMensual.Designer.vb">
+      <DependentUpon>InformeMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DFD-8-9-10\GenerarInformeMensual\InformeMensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio_ABM.Designer.vb">
+      <DependentUpon>Inicio_ABM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio_ABM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Cajas.Designer.vb">
+      <DependentUpon>Inicio_Cajas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Cajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Clientes.Designer.vb">
+      <DependentUpon>Inicio_Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Empleados.Designer.vb">
+      <DependentUpon>Inicio_Empleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Empleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Envios.Designer.vb">
+      <DependentUpon>Inicio_Envios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Envios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Productos.Designer.vb">
+      <DependentUpon>Inicio_Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Proveedores.Designer.vb">
+      <DependentUpon>Inicio_Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio\Inicio_Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN\Ingreso del Usuario\Inicio de Sesión.Designer.vb">
+      <DependentUpon>Inicio de Sesión.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN\Ingreso del Usuario\Inicio de Sesión.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ABM\Cajas_ABM.resx">
+      <DependentUpon>Cajas_ABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Cajeros_ABM.resx">
+      <DependentUpon>Cajeros_ABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Clientes_ABM.resx">
+      <DependentUpon>Clientes_ABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Empleados_ABM.resx">
+      <DependentUpon>Empleados_ABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Movimientos_ABM.resx">
+      <DependentUpon>Movimientos_ABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM\Proveedores_ABM.resx">
+      <DependentUpon>Proveedores_ABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\01 Solicitar Productos a Proveedor\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\02 Aprobar Presupuesto\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\03 Procesar Devolucion de Producto\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\03 Procesar Devolucion de Producto\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\Nota de Credito.resx">
+      <DependentUpon>Nota de Credito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD%281-2-3%29\Orden de Compra.resx">
+      <DependentUpon>Orden de Compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-11-ventas\buscar.resx">
+      <DependentUpon>buscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-11-ventas\datosCaja.resx">
+      <DependentUpon>datosCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-11-ventas\facturaA.resx">
+      <DependentUpon>facturaA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-11-ventas\Pago.resx">
+      <DependentUpon>Pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-11-ventas\ticketFactura.resx">
+      <DependentUpon>ticketFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-11-ventas\venta.resx">
+      <DependentUpon>venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-12-pedido interno\PedidoInterno.resx">
+      <DependentUpon>PedidoInterno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-13-reponer Gondolas\Gondolas.resx">
+      <DependentUpon>Gondolas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-14-Controlar Envio\Controlar envio realizado.resx">
+      <DependentUpon>Controlar envio realizado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-14-Controlar Envio\Elegir envio a controlar.resx">
+      <DependentUpon>Elegir envio a controlar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-4\Reclamo.resx">
+      <DependentUpon>Reclamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-4\Sugerencia.resx">
+      <DependentUpon>Sugerencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-4\VerificarInquietud.resx">
+      <DependentUpon>VerificarInquietud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-5\ConstanciaDeTrabajo.resx">
+      <DependentUpon>ConstanciaDeTrabajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-5\ContratarEmpleado.resx">
+      <DependentUpon>ContratarEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-5\Legajo.resx">
+      <DependentUpon>Legajo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-6\ControlarProductos.resx">
+      <DependentUpon>ControlarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-7-Registrar Envio\ProductosSuper.resx">
+      <DependentUpon>ProductosSuper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-7-Registrar Envio\Registar cliente en envio.resx">
+      <DependentUpon>Registar cliente en envio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-7-Registrar Envio\Registar cliente si no existe.resx">
+      <DependentUpon>Registar cliente si no existe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-7-Registrar Envio\Remito.resx">
+      <DependentUpon>Remito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-7-Registrar Envio\Ticket Factura.resx">
+      <DependentUpon>Ticket Factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-8-9-10\ArqueoDiario\Control.resx">
+      <DependentUpon>Control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-8-9-10\ArqueoDiario\InformeArqueoDiario.resx">
+      <DependentUpon>InformeArqueoDiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-8-9-10\ArqueoDiario\MovimientosCaja.resx">
+      <DependentUpon>MovimientosCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-8-9-10\GenerarHojaDeRuta\HojaDeRuta.resx">
+      <DependentUpon>HojaDeRuta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-8-9-10\GenerarInformeMensual\GenerarInformeMensual.resx">
+      <DependentUpon>GenerarInformeMensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DFD-8-9-10\GenerarInformeMensual\InformeMensual.resx">
+      <DependentUpon>InformeMensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio_ABM.resx">
+      <DependentUpon>Inicio_ABM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio_Cajas.resx">
+      <DependentUpon>Inicio_Cajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio_Clientes.resx">
+      <DependentUpon>Inicio_Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio_Empleados.resx">
+      <DependentUpon>Inicio_Empleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio_Envios.resx">
+      <DependentUpon>Inicio_Envios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio_Productos.resx">
+      <DependentUpon>Inicio_Productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio\Inicio_Proveedores.resx">
+      <DependentUpon>Inicio_Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN\Ingreso del Usuario\Inicio de Sesión.resx">
+      <DependentUpon>Inicio de Sesión.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documentos Comerciales\Hoja de Ruta.jpeg" />
+    <Content Include="Documentos Comerciales\Icono-LOGO-IMAGEN-copia.ico" />
+    <Content Include="Documentos Comerciales\Icono-LOGO-IMAGEN.ico" />
+    <Content Include="Documentos Comerciales\Informe Mensual Cierre Contable.jpeg" />
+    <Content Include="Documentos Comerciales\logo - copia.png" />
+    <Content Include="Documentos Comerciales\logo.png" />
+    <Content Include="Documentos Comerciales\NotaCredito.PNG" />
+    <Content Include="Documentos Comerciales\OrdenCompra1.png" />
+    <Content Include="Documentos Comerciales\TicketFactura.PNG" />
+    <Content Include="LOGIN\Ingreso del Usuario\Ingreso del Usuario.vbproj" />
+    <Content Include="Resources\logo - copia.png" />
+    <Content Include="Resources\NotaCredito.PNG" />
+    <Content Include="Resources\OrdenCompra1.png" />
+    <Content Include="Resources\ticketB-1.png" />
+    <Content Include="Resources\ticketB-2.png" />
+    <Content Include="Resources\TicketFactura.PNG" />
+    <Content Include="Resources\TicketFactura1.PNG" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
